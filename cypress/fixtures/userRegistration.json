@@ -1,0 +1,116 @@
+{
+    "countryField": [
+        {
+            "testData": {
+                "locator": "#AccountFrm_country_id",
+                "data": "{enter}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Please select a country!\")",
+                "helpBlock": "Please select a country!"
+            }
+        }
+    ],
+    "regularFields": [
+        {
+            "testData": {
+                "locator": "#AccountFrm_firstname",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"First Name must be between 1 and 32 characters!\")",
+                "helpBlock": "First Name must be between 1 and 32 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_lastname",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Last Name must be between 1 and 32 characters!\")",
+                "helpBlock": "Last Name must be between 1 and 32 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_email",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Email Address does not appear to be valid!\")",
+                "helpBlock": "Email Address does not appear to be valid!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_address_1",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Address 1 must be between 3 and 128 characters!\")",
+                "helpBlock": "Address 1 must be between 3 and 128 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_city",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"City must be between 3 and 128 characters!\")",
+                "helpBlock": "City must be between 3 and 128 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_zone_id",
+                "data": "{moveToStart}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Please select a region / state!\")",
+                "helpBlock": "Please select a region / state!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_postcode",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Zip/postal code must be between 3 and 10 characters!\")",
+                "helpBlock": "Zip/postal code must be between 3 and 10 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_loginname",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Login name must be alphanumeric only and between 5 and 64 characters!\")",
+                "helpBlock": "Login name must be alphanumeric only and between 5 and 64 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_password",
+                "data": "{backspace}"
+            },
+            "expected": {
+                "locator": "span:contains(\"Password must be between 4 and 20 characters!\")",
+                "helpBlock": "Password must be between 4 and 20 characters!"
+            }
+        },
+        {
+            "testData": {
+                "locator": "#AccountFrm_confirm",
+                "data": "{insert} "
+            },
+            "expected": {
+                "locator": "span:contains(\"Password confirmation does not match password!\")",
+                "helpBlock": "Password confirmation does not match password!"
+            }
+        }
+    ]
+}

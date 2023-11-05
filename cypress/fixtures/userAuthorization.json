@@ -1,0 +1,22 @@
+[
+  {
+    "testData": {
+      "locator": "#loginFrm_loginname",
+      "data": "1"
+    },
+    "expected": {
+      "locator": ".alert-error",
+      "helpBlock": "Error: Incorrect login or password provided."
+    }
+  },
+  {
+    "testData": {
+      "locator": "#loginFrm_password",
+      "data": "1"
+    },
+    "expected": {
+      "locator": ".alert-error",
+      "helpBlock": "Error: Incorrect login or password provided."
+    }
+  }
+]
